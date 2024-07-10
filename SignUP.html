@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="StyleCss.css">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <a href="Home.html"><img src="logo.jpg" alt="Course Image" width="300" height="100"></a>
+            <a href="about.html"><span class="link-icon"><img src="icons8-about-us-24.png" alt="Course Image" width="40" height="40">About Us</span></a>
+            <a href="cart.html"><span class="link-icon"><img src="icons8-cart-50.png" alt="Course Image" width="40" height="40">Cart</span></a>
+            <a href="profile.php"><span class="link-icon"><img src="icons8-male-user-50.png" alt="Course Image" width="40" height="40">My Profile</span></a>
+            <a href="Login.html"><span class="link-icon"><img src="icons8-add-administrator-50.png" alt="Course Image" width="40" height="40">Login/Register</span></a>
+            <a href="logout.php"><span class="link-icon"><img src="icons8-logout-24.png" alt="Course Image" width="40" height="40">Logout</span></a>
+        </nav>
+    </header>
+    <main class="signup-main">
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form action="signup_handler.php" method="post">
+                <!-- Customer Information -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="date_of_birth">Date of Birth</label>
+                    <input type="date" id="date_of_birth" name="date_of_birth" required>
+                </div>
+                <div class="form-group">
+                    <label for="id_number">ID Number</label>
+                    <input type="text" id="id_number" name="id_number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+                <!-- Credit Card Details -->
+                <div class="form-group">
+                    <label for="credit_card_number">Credit Card Number</label>
+                    <input type="text" id="credit_card_number" name="credit_card_number" required>
+                </div>
+                <div class="form-group">
+                    <label for="credit_card_expirationDate">Credit Card Expiry Date</label>
+                    <input type="text" id="credit_card_expirationDate" name="credit_card_expirationDate" placeholder="yyyy-mm-dd" required>
+                </div>
+                <div class="form-group">
+                    <label for="credit_card_name">Name on Credit Card</label>
+                    <input type="text" id="credit_card_name" name="credit_card_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="credit_card_bank">Bank Issuing the Card</label>
+                    <input type="text" id="credit_card_bank" name="credit_card_bank" required>
+                </div>
+                <!-- Account Information -->
+                <div class="form-group">
+                    <label for="username">Username (between 6 and 13 characters)</label>
+                    <input type="text" id="username" name="username" minlength="6" maxlength="13" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (between 8 and 12 characters)</label>
+                    <input type="password" id="password" name="password" minlength="8" maxlength="12" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 AUTO DRIVE. All rights reserved.</p>
+        <p>Address: 1234 AUTO DRIVE St, Ramallah, Palestine</p>
+        <p>Email: support@AUTODRIVE.com | Phone: +1234567890</p>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
+</html>

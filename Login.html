@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="StyleHome.css">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <a href="Home.html"><img src="logo.jpg" alt="Course Image" width="300" height="100"></a>
+            <a href="about.html"><span class="link-icon"><img src="icons8-about-us-24.png" alt="Course Image" width="40" height="40">About Us</span></a>
+            <a href="cart.html"><span class="link-icon"><img src="icons8-cart-50.png" alt="Course Image" width="40" height="40">Cart</span></a>
+            <a href="profile.php"><span class="link-icon"><img src="icons8-male-user-50.png" alt="Course Image" width="40" height="40">My Profile</span></a>
+            <a href="Login.html"><span class="link-icon"><img src="icons8-add-administrator-50.png" alt="Course Image" width="40" height="40">Login/Register</span></a>
+            <a href="logout.php"><span class="link-icon"><img src="icons8-logout-24.png" alt="Course Image" width="40" height="40">Logout</span></a>
+        </nav>
+    </header>
+    <main class="login-main">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login_handler.php" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="SignUP.html">Sign up</a></p>
+    </div>
+</main>
+    <footer>
+        <p>&copy; 2024 AUTO DRIVE. All rights reserved.</p>
+        <p>Address: 1234 AUTO DRIVE St, Ramallah, Palestine</p>
+        <p>Email: support@AUTODRIVE.com | Phone: +1234567890</p>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
+</html>
